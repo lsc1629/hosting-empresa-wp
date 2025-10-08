@@ -1,0 +1,21 @@
+{
+  "name": "SiteGround Hosting - Fast, Secure & Reliable Web Hosting",
+  "short_name": "SiteGround Pro",
+  "description": "Premium web hosting with 99.9% uptime, free SSL, daily backups, and 24/7 support. Perfect for WordPress, WooCommerce, and all websites.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
+  "orientation": "portrait-primary"
+}

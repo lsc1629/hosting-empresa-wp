@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Main pages in different languages -->
+  
+  <!-- English -->
+  <url>
+    <loc>https://yourdomain.com/en</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yourdomain.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yourdomain.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yourdomain.com/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yourdomain.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yourdomain.com/it"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yourdomain.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yourdomain.com/"/>
+  </url>
+  
+  <!-- Spanish -->
+  <url>
+    <loc>https://yourdomain.com/es</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourdomain.com/en"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yourdomain.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yourdomain.com/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yourdomain.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yourdomain.com/it"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yourdomain.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yourdomain.com/"/>
+  </url>
+  
+  <!-- Portuguese -->
+  <url>
+    <loc>https://yourdomain.com/pt</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourdomain.com/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yourdomain.com/es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yourdomain.com/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yourdomain.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yourdomain.com/it"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yourdomain.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yourdomain.com/"/>
+  </url>
+  
+  <!-- German -->
+  <url>
+    <loc>https://yourdomain.com/de</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourdomain.com/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yourdomain.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yourdomain.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yourdomain.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yourdomain.com/it"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yourdomain.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yourdomain.com/"/>
+  </url>
+  
+  <!-- French -->
+  <url>
+    <loc>https://yourdomain.com/fr</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourdomain.com/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yourdomain.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yourdomain.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yourdomain.com/de"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yourdomain.com/it"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yourdomain.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yourdomain.com/"/>
+  </url>
+  
+  <!-- Italian -->
+  <url>
+    <loc>https://yourdomain.com/it</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourdomain.com/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yourdomain.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yourdomain.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yourdomain.com/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yourdomain.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yourdomain.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yourdomain.com/"/>
+  </url>
+  
+  <!-- Japanese -->
+  <url>
+    <loc>https://yourdomain.com/ja</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourdomain.com/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yourdomain.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yourdomain.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yourdomain.com/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yourdomain.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yourdomain.com/it"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yourdomain.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yourdomain.com/"/>
+  </url>
+  
+  <!-- Chinese -->
+  <url>
+    <loc>https://yourdomain.com/zh</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourdomain.com/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yourdomain.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yourdomain.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yourdomain.com/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yourdomain.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yourdomain.com/it"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yourdomain.com/"/>
+  </url>
+  
+  <!-- Default/Root -->
+  <url>
+    <loc>https://yourdomain.com/</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yourdomain.com/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yourdomain.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yourdomain.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yourdomain.com/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yourdomain.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yourdomain.com/it"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yourdomain.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yourdomain.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yourdomain.com/"/>
+  </url>
+
+  <!-- WordPress Hosting Pages -->
+  <url>
+    <loc>https://yourdomain.com/wordpress-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/en/wordpress-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/es/wordpress-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/pt/wordpress-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/de/wordpress-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/fr/wordpress-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/it/wordpress-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/ja/wordpress-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/zh/wordpress-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- WooCommerce Hosting Pages -->
+  <url>
+    <loc>https://yourdomain.com/woocommerce-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/en/woocommerce-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/es/woocommerce-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/pt/woocommerce-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/de/woocommerce-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/fr/woocommerce-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/it/woocommerce-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/ja/woocommerce-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/zh/woocommerce-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Business Hosting Pages -->
+  <url>
+    <loc>https://yourdomain.com/business-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/en/business-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/es/business-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/pt/business-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/de/business-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/fr/business-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/it/business-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/ja/business-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/zh/business-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Compare Hosting Pages -->
+  <url>
+    <loc>https://yourdomain.com/compare-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/en/compare-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/es/compare-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/pt/compare-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/de/compare-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/fr/compare-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/it/compare-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/ja/compare-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/zh/compare-hosting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
