@@ -10,7 +10,7 @@ import { openAffiliateLink } from '../config/affiliate'
 gsap.registerPlugin(ScrollTrigger)
 
 const WordPressHostingPage = () => {
-  const { t, i18n } = useTranslation()
+  const { i18n } = useTranslation()
   const sectionRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {

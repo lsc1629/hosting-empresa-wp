@@ -5,7 +5,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import App from './App.tsx'
 import './index.css'
 import './i18n/config'
-import { initializeHostingGlobalOptimizations } from './utils/hostingGlobalOptimizations.js'
+import { initializeHostingGlobalOptimizations } from './utils/hostingGlobalOptimizations'
 
 // 🚀 Inicialización de optimizaciones globales de hosting
 const initializeApp = async () => {
