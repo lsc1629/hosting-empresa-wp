@@ -1,48 +1,112 @@
-User-agent: *
-Allow: /
+# 🚀 ROBOTS.TXT MUNDIAL - HOSTING PARA EMPRESAS
+# Optimizado para SEO + AEO (Answer Engine Optimization)
+# Máxima indexación y tráfico diario garantizado
+# Dominio: hostingparaempresa.com
 
-# Sitemap
-Sitemap: https://yourdomain.com/sitemap.xml
-
-# Crawl-delay for better server performance
-Crawl-delay: 1
-
-# Block access to admin areas (if any)
-Disallow: /admin/
-Disallow: /private/
-Disallow: /*.json$
-
-# Allow all major search engines
+# 🤖 BOTS DE BÚSQUEDA PRINCIPALES - Máxima Prioridad
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Slurp
 Allow: /
+Crawl-delay: 1
 
 User-agent: DuckDuckBot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Baiduspider
 Allow: /
+Crawl-delay: 1
 
 User-agent: YandexBot
 Allow: /
+Crawl-delay: 1
 
-# Block AI crawlers for content protection (optional)
+# 🧠 BOTS DE IA - ANSWER ENGINE OPTIMIZATION (AEO)
+# ¡CRÍTICO! Permitir para ser citados en respuestas de IA
 User-agent: GPTBot
-Disallow: /
+Allow: /
+Crawl-delay: 0
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
 
 User-agent: CCBot
-Disallow: /
+Allow: /
+Crawl-delay: 0
 
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
+Crawl-delay: 0
 
 User-agent: Claude-Web
-Disallow: /
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: YouBot
+Allow: /
+
+User-agent: BardBot
+Allow: /
+
+# 🌐 TODOS LOS DEMÁS BOTS
+User-agent: *
+Allow: /
+Crawl-delay: 1
+
+# 🚫 ARCHIVOS Y DIRECTORIOS BLOQUEADOS
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /*.ts$
+Disallow: /*.tsx$
+
+# 📍 SITEMAPS - MÁXIMA PRIORIDAD AEO
+Sitemap: https://hostingparaempresa.com/sitemap.xml
+Sitemap: https://hostingparaempresa.com/sitemap-optimized.xml
+
+# 🎯 PÁGINAS PRIORITARIAS PARA AEO
+# Optimizadas para Answer Engines y tráfico masivo
+Allow: /wordpress-hosting
+Allow: /woocommerce-hosting  
+Allow: /business-hosting
+Allow: /pricing
+Allow: /compare-hosting
+Allow: /support
+
+# 🌍 VERSIONES MULTIIDIOMA - SEO GLOBAL
+Allow: /es/
+Allow: /en/
+Allow: /pt/
+Allow: /de/
+Allow: /fr/
+Allow: /it/
+Allow: /ja/
+Allow: /zh/
+
+# 📊 RECURSOS PERMITIDOS
+Allow: /favicon.ico
+Allow: /robots.txt
+Allow: /sitemap.xml
+Allow: /manifest.json
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
