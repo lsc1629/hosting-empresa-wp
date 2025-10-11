@@ -1,5 +1,7 @@
-// Servicio para obtener imágenes de Pixabay API
+// Servicio para obtener imágenes de Pixabay API con fallback a Unsplash
 // API Key pública de demostración - en producción usar variable de entorno
+
+import { getFallbackImageByTags, convertToPixabayFormat, getFallbackImages } from './fallbackImages'
 
 const PIXABAY_API_KEY = '15287-4bcc5c9b70777c4a7c8b4c4c4'
 const PIXABAY_BASE_URL = 'https://pixabay.com/api/'
@@ -91,7 +93,17 @@ export const searchImages = async (
     return data.hits
   } catch (error) {
     console.error('❌ Error fetching images from Pixabay:', error)
-    return []
+    console.log('🔄 Using fallback images from Unsplash...')
+    
+    // Usar imágenes de fallback
+    const fallbackImages = getFallbackImages([query], options.perPage || 6)
+    const pixabayFormatImages = fallbackImages.map(convertToPixabayFormat)
+    
+    if (DEBUG) {
+      console.log('✅ Fallback images loaded:', pixabayFormatImages.length)
+    }
+    
+    return pixabayFormatImages
   }
 }
 
@@ -168,8 +180,18 @@ export const getFeaturedImage = async (
 
   if (DEBUG) {
     console.log('❌ No featured image found for tags:', tags)
+    console.log('🔄 Using fallback image...')
   }
-  return null
+  
+  // Usar imagen de fallback
+  const fallbackImage = getFallbackImageByTags(tags)
+  const pixabayFormatImage = convertToPixabayFormat(fallbackImage)
+  
+  if (DEBUG) {
+    console.log('✅ Fallback featured image loaded')
+  }
+  
+  return pixabayFormatImage
 }
 
 // Función para obtener imágenes de contenido
