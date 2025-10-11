@@ -8,6 +8,8 @@ import BusinessHostingPage from './pages/BusinessHostingPage'
 import CompareHostingPage from './pages/CompareHostingPage'
 import PricingPage from './pages/PricingPage'
 import SupportPage from './pages/SupportPage'
+import BlogPage from './pages/BlogPage'
+import BlogPostPage from './pages/BlogPostPage'
 import { ROUTE_SLUGS } from './config/routes'
 
 function App() {
@@ -23,6 +25,10 @@ function App() {
     routes.push(<Route key="compare-en" path="/compare-hosting" element={<CompareHostingPage />} />)
     routes.push(<Route key="pricing-en" path="/pricing" element={<PricingPage />} />)
     routes.push(<Route key="support-en" path="/support" element={<SupportPage />} />)
+    
+    // Rutas del blog
+    routes.push(<Route key="blog" path="/blog" element={<BlogPage />} />)
+    routes.push(<Route key="blog-post" path="/blog/:slug" element={<BlogPostPage />} />)
     
     // Rutas localizadas para cada idioma
     Object.entries(ROUTE_SLUGS).forEach(([routeKey, slugs]) => {

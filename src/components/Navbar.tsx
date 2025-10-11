@@ -97,6 +97,14 @@ const Navbar = () => {
               {i18n.language === 'es' ? 'Comparar' : 'Compare'}
             </Link>
 
+            {/* Blog */}
+            <Link
+              to="/blog"
+              className="text-gray-300 hover:text-white transition-colors duration-200"
+            >
+              {i18n.language === 'es' ? 'Blog' : 'Blog'}
+            </Link>
+
             {/* Pricing - página independiente */}
             <Link
               to={getLocalizedRoute('pricing', i18n.language)}
@@ -173,6 +181,13 @@ const Navbar = () => {
               </div>
 
               {/* Navigation sections - páginas independientes */}
+              <Link
+                to="/blog"
+                onClick={() => setIsOpen(false)}
+                className="text-left text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                {i18n.language === 'es' ? 'Blog' : 'Blog'}
+              </Link>
               <Link
                 to={getLocalizedRoute('pricing', i18n.language)}
                 onClick={() => setIsOpen(false)}
