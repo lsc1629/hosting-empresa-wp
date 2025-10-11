@@ -97,7 +97,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-32">
       {/* Animated Background */}
       <div 
         ref={backgroundRef}
