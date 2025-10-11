@@ -12,7 +12,7 @@ const ImageTest = () => {
     console.log('🧪 Testing Pixabay API...')
     
     try {
-      const results = await searchImages('hosting server', {
+      const results = await searchImages('technology', {
         category: 'computer',
         perPage: 3
       })

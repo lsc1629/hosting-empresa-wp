@@ -1,7 +1,7 @@
 // Servicio para obtener imágenes de Pixabay API
 // API Key pública de demostración - en producción usar variable de entorno
 
-const PIXABAY_API_KEY = '9656065-a4094594c34f9ac14c7fc4c39'
+const PIXABAY_API_KEY = '15287-4bcc5c9b70777c4a7c8b4c4c4'
 const PIXABAY_BASE_URL = 'https://pixabay.com/api/'
 
 // Debug flag
@@ -57,16 +57,10 @@ export const searchImages = async (
   try {
     const params = new URLSearchParams({
       key: PIXABAY_API_KEY,
-      q: encodeURIComponent(query),
-      image_type: options.imageType || 'photo',
-      orientation: options.orientation || 'horizontal',
-      category: options.category || 'business',
-      min_width: (options.minWidth || 640).toString(),
-      min_height: (options.minHeight || 360).toString(),
+      q: query,
+      image_type: 'photo',
       per_page: (options.perPage || 6).toString(),
-      safesearch: (options.safeSearch !== false).toString(),
-      order: 'popular',
-      lang: 'en'
+      safesearch: 'true'
     })
 
     const url = `${PIXABAY_BASE_URL}?${params}`
@@ -147,11 +141,11 @@ export const getFeaturedImage = async (
 
   // Intentar con diferentes queries hasta encontrar una imagen
   const queries = [
-    tags.slice(0, 2).join(' ') + ' technology',
-    tags[0] + ' server',
-    'web hosting technology',
-    'server technology',
-    'computer technology'
+    'hosting',
+    'server',
+    'technology',
+    'computer',
+    'business'
   ]
 
   for (const query of queries) {
