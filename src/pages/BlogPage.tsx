@@ -1,10 +1,8 @@
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
-import { Calendar, Clock, User, ArrowRight } from 'lucide-react'
 import { blogPosts } from '../data/blogPosts'
-import { getLocalizedRoute } from '../config/routes'
+import BlogPostCard from '../components/BlogPostCard'
 
 const BlogPage = () => {
   const { i18n } = useTranslation()
@@ -47,74 +45,11 @@ const BlogPage = () => {
           <div className="container-custom">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredPosts.map((post) => (
-                <article 
+                <BlogPostCard 
                   key={post.id}
-                  className="glass-effect rounded-xl overflow-hidden group hover:scale-105 transition-all duration-300"
-                >
-                  {/* Featured Image */}
-                  <div className="aspect-video bg-gradient-to-br from-primary-500/20 to-accent-500/20 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4">
-                      <span className="px-3 py-1 bg-primary-500/20 backdrop-blur-sm rounded-full text-sm text-primary-400 border border-primary-500/30">
-                        {post.category}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-6">
-                    {/* Meta Info */}
-                    <div className="flex items-center space-x-4 text-sm text-gray-400 mb-4">
-                      <div className="flex items-center space-x-1">
-                        <Calendar className="w-4 h-4" />
-                        <span>{new Date(post.publishDate).toLocaleDateString('es-ES')}</span>
-                      </div>
-                      <div className="flex items-center space-x-1">
-                        <Clock className="w-4 h-4" />
-                        <span>{post.readTime} min</span>
-                      </div>
-                    </div>
-
-                    {/* Title */}
-                    <h2 className="text-xl font-bold text-white mb-3 group-hover:text-primary-400 transition-colors">
-                      {post.title}
-                    </h2>
-
-                    {/* Excerpt */}
-                    <p className="text-gray-300 mb-4 line-clamp-3">
-                      {post.excerpt}
-                    </p>
-
-                    {/* Author */}
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-2 text-sm text-gray-400">
-                        <User className="w-4 h-4" />
-                        <span>{post.author}</span>
-                      </div>
-
-                      {/* Read More */}
-                      <Link
-                        to={`${getLocalizedRoute('blog', i18n.language)}/${post.slug}`}
-                        className="flex items-center space-x-1 text-primary-400 hover:text-primary-300 transition-colors text-sm font-medium"
-                      >
-                        <span>{i18n.language === 'es' ? 'Leer más' : 'Read more'}</span>
-                        <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    </div>
-
-                    {/* Tags */}
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      {post.tags.slice(0, 3).map((tag) => (
-                        <span
-                          key={tag}
-                          className="px-2 py-1 bg-gray-800/50 rounded text-xs text-gray-400"
-                        >
-                          #{tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </article>
+                  post={post}
+                  language={i18n.language}
+                />
               ))}
             </div>
 

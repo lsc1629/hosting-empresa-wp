@@ -5,12 +5,21 @@ import { Helmet } from 'react-helmet-async'
 import { Calendar, Clock, User, ArrowLeft, Share2, BookOpen } from 'lucide-react'
 import { blogPosts } from '../data/blogPosts'
 import { getLocalizedRoute } from '../config/routes'
+import { useBlogImages } from '../hooks/useBlogImages'
+import BlogImage from '../components/BlogImage'
 import ReactMarkdown from 'react-markdown'
 
 const BlogPostPage = () => {
   const { slug } = useParams<{ slug: string }>()
   const { i18n } = useTranslation()
   const [post, setPost] = useState(blogPosts.find(p => p.slug === slug))
+  
+  // Cargar imágenes para el artículo
+  const { featuredImage } = useBlogImages(
+    post?.title || '',
+    post?.tags || [],
+    post?.content
+  )
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -140,6 +149,18 @@ const BlogPostPage = () => {
               </button>
             </div>
           </header>
+
+          {/* Featured Image */}
+          {featuredImage && (
+            <div className="max-w-4xl mx-auto mb-12">
+              <BlogImage
+                image={featuredImage}
+                alt={post.title}
+                className="w-full rounded-xl shadow-2xl"
+                showAttribution={true}
+              />
+            </div>
+          )}
 
           {/* Article Content */}
           <div className="max-w-4xl mx-auto">
