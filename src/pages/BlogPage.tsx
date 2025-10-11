@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import { Calendar, Clock, User, ArrowRight } from 'lucide-react'
 import { blogPosts } from '../data/blogPosts'
+import { getLocalizedRoute } from '../config/routes'
 
 const BlogPage = () => {
   const { i18n } = useTranslation()
@@ -93,10 +94,10 @@ const BlogPage = () => {
 
                       {/* Read More */}
                       <Link
-                        to={`/blog/${post.slug}`}
+                        to={`${getLocalizedRoute('blog', i18n.language)}/${post.slug}`}
                         className="flex items-center space-x-1 text-primary-400 hover:text-primary-300 transition-colors text-sm font-medium"
                       >
-                        <span>Leer más</span>
+                        <span>{i18n.language === 'es' ? 'Leer más' : 'Read more'}</span>
                         <ArrowRight className="w-4 h-4" />
                       </Link>
                     </div>

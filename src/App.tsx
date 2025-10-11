@@ -26,7 +26,7 @@ function App() {
     routes.push(<Route key="pricing-en" path="/pricing" element={<PricingPage />} />)
     routes.push(<Route key="support-en" path="/support" element={<SupportPage />} />)
     
-    // Rutas del blog
+    // Rutas del blog (inglés por defecto)
     routes.push(<Route key="blog" path="/blog" element={<BlogPage />} />)
     routes.push(<Route key="blog-post" path="/blog/:slug" element={<BlogPostPage />} />)
     
@@ -53,6 +53,10 @@ function App() {
               break
             case 'support':
               routes.push(<Route key={key} path={path} element={<SupportPage />} />)
+              break
+            case 'blog':
+              routes.push(<Route key={key} path={path} element={<BlogPage />} />)
+              routes.push(<Route key={`${key}-post`} path={`${path}/:slug`} element={<BlogPostPage />} />)
               break
           }
         }

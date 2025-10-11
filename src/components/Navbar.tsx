@@ -99,7 +99,7 @@ const Navbar = () => {
 
             {/* Blog */}
             <Link
-              to="/blog"
+              to={getLocalizedRoute('blog', i18n.language)}
               className="text-gray-300 hover:text-white transition-colors duration-200"
             >
               {i18n.language === 'es' ? 'Blog' : 'Blog'}
@@ -182,7 +182,7 @@ const Navbar = () => {
 
               {/* Navigation sections - páginas independientes */}
               <Link
-                to="/blog"
+                to={getLocalizedRoute('blog', i18n.language)}
                 onClick={() => setIsOpen(false)}
                 className="text-left text-gray-300 hover:text-white transition-colors duration-200"
               >

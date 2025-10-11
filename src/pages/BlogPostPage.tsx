@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import { Calendar, Clock, User, ArrowLeft, Share2, BookOpen } from 'lucide-react'
 import { blogPosts } from '../data/blogPosts'
+import { getLocalizedRoute } from '../config/routes'
 import ReactMarkdown from 'react-markdown'
 
 const BlogPostPage = () => {
   const { slug } = useParams<{ slug: string }>()
+  const { i18n } = useTranslation()
   const [post, setPost] = useState(blogPosts.find(p => p.slug === slug))
 
   useEffect(() => {
@@ -82,11 +85,11 @@ const BlogPostPage = () => {
         {/* Back to Blog */}
         <div className="container-custom py-6">
           <Link 
-            to="/blog" 
+            to={getLocalizedRoute('blog', i18n.language)} 
             className="inline-flex items-center space-x-2 text-primary-400 hover:text-primary-300 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Volver al Blog</span>
+            <span>{i18n.language === 'es' ? 'Volver al Blog' : 'Back to Blog'}</span>
           </Link>
         </div>
 
@@ -213,7 +216,7 @@ const BlogPostPage = () => {
                 {relatedPosts.map((relatedPost) => (
                   <Link
                     key={relatedPost.id}
-                    to={`/blog/${relatedPost.slug}`}
+                    to={`${getLocalizedRoute('blog', i18n.language)}/${relatedPost.slug}`}
                     className="glass-effect rounded-xl p-6 group hover:scale-105 transition-all duration-300"
                   >
                     <h4 className="text-lg font-semibold text-white mb-3 group-hover:text-primary-400 transition-colors">

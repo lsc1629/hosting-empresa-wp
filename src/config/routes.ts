@@ -82,6 +82,18 @@ export const ROUTE_SLUGS = {
     it: '/supporto',
     ja: '/support',
     zh: '/support'
+  },
+  
+  // Blog
+  blog: {
+    en: '/blog',
+    es: '/blog',
+    de: '/blog',
+    pt: '/blog',
+    fr: '/blog',
+    it: '/blog',
+    ja: '/blog',
+    zh: '/blog'
   }
 }
 
