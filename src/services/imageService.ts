@@ -4,6 +4,9 @@
 const PIXABAY_API_KEY = '9656065-a4094594c34f9ac14c7fc4c39'
 const PIXABAY_BASE_URL = 'https://pixabay.com/api/'
 
+// Debug flag
+const DEBUG = true
+
 export interface PixabayImage {
   id: number
   pageURL: string
@@ -66,20 +69,34 @@ export const searchImages = async (
       lang: 'en'
     })
 
-    const response = await fetch(`${PIXABAY_BASE_URL}?${params}`)
+    const url = `${PIXABAY_BASE_URL}?${params}`
+    if (DEBUG) {
+      console.log('🔍 Pixabay API Request:', { query, url })
+    }
+
+    const response = await fetch(url)
     
     if (!response.ok) {
-      throw new Error(`Pixabay API error: ${response.status}`)
+      throw new Error(`Pixabay API error: ${response.status} - ${response.statusText}`)
     }
 
     const data: PixabayResponse = await response.json()
+    
+    if (DEBUG) {
+      console.log('📸 Pixabay API Response:', { 
+        query, 
+        total: data.total, 
+        hits: data.hits.length,
+        firstImage: data.hits[0]?.webformatURL 
+      })
+    }
     
     // Guardar en cache
     imageCache.set(cacheKey, data.hits)
     
     return data.hits
   } catch (error) {
-    console.error('Error fetching images from Pixabay:', error)
+    console.error('❌ Error fetching images from Pixabay:', error)
     return []
   }
 }
@@ -124,20 +141,41 @@ export const getFeaturedImage = async (
   _title: string, 
   tags: string[]
 ): Promise<PixabayImage | null> => {
-  // Crear query basado en el título y tags
-  const mainKeywords = tags.slice(0, 2).join(' ')
-  const query = `${mainKeywords} technology business`
+  if (DEBUG) {
+    console.log('🎯 Getting featured image for tags:', tags)
+  }
 
-  const images = await searchImages(query, {
-    category: 'computer',
-    orientation: 'horizontal',
-    imageType: 'photo',
-    minWidth: 1200,
-    minHeight: 600,
-    perPage: 1
-  })
+  // Intentar con diferentes queries hasta encontrar una imagen
+  const queries = [
+    tags.slice(0, 2).join(' ') + ' technology',
+    tags[0] + ' server',
+    'web hosting technology',
+    'server technology',
+    'computer technology'
+  ]
 
-  return images.length > 0 ? images[0] : null
+  for (const query of queries) {
+    const images = await searchImages(query, {
+      category: 'computer',
+      orientation: 'horizontal',
+      imageType: 'photo',
+      minWidth: 800,
+      minHeight: 400,
+      perPage: 1
+    })
+
+    if (images.length > 0) {
+      if (DEBUG) {
+        console.log('✅ Found featured image with query:', query)
+      }
+      return images[0]
+    }
+  }
+
+  if (DEBUG) {
+    console.log('❌ No featured image found for tags:', tags)
+  }
+  return null
 }
 
 // Función para obtener imágenes de contenido

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import { blogPosts } from '../data/blogPosts'
 import BlogPostCard from '../components/BlogPostCard'
+import ImageTest from '../components/ImageTest'
 
 const BlogPage = () => {
   const { i18n } = useTranslation()
@@ -37,6 +38,13 @@ const BlogPage = () => {
                 tu hosting empresarial y llevar tu negocio al siguiente nivel.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* API Test - Temporal */}
+        <section className="py-8">
+          <div className="container-custom">
+            <ImageTest />
           </div>
         </section>
 
